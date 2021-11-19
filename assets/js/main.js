@@ -69,15 +69,6 @@ const tabs        = document.querySelectorAll('[data-target]'),
         })
     })
 
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -113,5 +104,3 @@ function scrollUp(){
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-/*==================== DARK LIGHT THEME ====================*/ 
