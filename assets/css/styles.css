@@ -299,10 +299,9 @@ img{
     text-align: left;
 }
 
-/*
 .home__scroll{
     display: none;
-}*/
+}
 
 .home__scroll-button{
     color: var(--first-color);
@@ -362,12 +361,12 @@ img{
 }
 
 .about__data{
-    width: 40%;
+    width: 80%;
     margin: auto;
 }
 
 .about__description{
-    text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -774,7 +773,7 @@ img{
 }
 
 /* Show scroll */
-.scroll-scroll{
+.show-scroll{
     bottom: 5rem;
 }
 
@@ -977,6 +976,10 @@ img{
     .main,
     .footer__container{
         padding: 0;
+    }
+
+    .about__data{
+        width: 50%;
     }
 
     .home__blob{
