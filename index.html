@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Antonio Pucciarelli's website</title>
+    </head>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <h3><a href="#" class="nav__logo">Antonio Pucciarelli</a></h3>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                    
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                    
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li> 
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-brain nav__icon"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-books nav__icon"></i> Career & projects
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact me
+                            </a>
+                        </li>
+                    
+                    </ul>    
+
+                    <i class="uil uil-times nav__close" id="nav-close"></i> 
+                
+                </div>
+
+                <div class="nav__btn">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                
+                <div class="home__container container grid">
+                    
+                    <div class="home__content grid">
+                        <!-- repository links -->
+                        <div class="home__social">
+                            <!-- linkedIn -->
+                            <a href="https://www.linkedin.com/in/antonio-pucciarelli-4138a3183" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <!-- github -->
+                            <a href="https://github.com/antoniopucciarelli" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <!-- gitlab 
+                            <a href="https://gitlab.com/antoniopucciarelli" target="_blank" class="home__social-icon">
+                                <i class="uil uil-gitlab"></i>
+                            </a> -->
+                        </div>
+
+                        <!--home blob-->
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    
+                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <!--home introduction-->
+                        <div class="home__data">
+                            <h1 class="home__title">
+                            Antonio Pucciarelli.
+                            </h1>
+                            <h3 class="home__subtitle">
+                            Aerospace engineer
+                            </h3>
+                            <p class="home__description">
+                            I am an open-source supporter and I am interested in computational fluid dynamics modeling, coding and analysis. 
+                            </p>
+                            <a href="#contact" class="button button--flex">
+                                Contact me<i class="iuil uil-message button__icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow "></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+
+                <h2 class="section__title">
+                    About me
+                </h2>
+                
+                <span class="section__subtitle">
+                    My goals
+                </span> 
+                
+                <div class="about__container containter">
+                    <!-- <img src="assets/img/about.jpg" alt="" class="about__img"> -->
+                        
+                    <div class="about__data">
+                        <p class="about__description">
+                            Five years ago, I moved from Salerno to Milano with the intent of building my career in the aerospace field. I started
+                            the MSc pointing to have a good comprehension of internal and external flows, so I decided to create a personalized
+                            learning track based on CFD, turbomachinery design and flows modeling. Over the next few years, I intend to develop as
+                            aerospace engineer in the field of turbulence modeling and combustion processes analysis, modeling and optimization.
+                            I am also interested in external aerodynamics, its modeling and the study of aeroelastic effects.
+                        </p>
+                        
+                        <!--
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Years <br> experience </span>
+                            </div>
+                            
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Completed <br> projects </span>
+                            </div>
+                            
+                            <div>
+                                <span class="about__info-title">05+</span>
+                                <span class="about__info-name">Companies <br> worked </span>
+                            </div>
+                        </div>
+                        -->
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/ANTONIO_PUCCIARELLI_CV.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My techinical level</span>
+                
+                <div class="skills__container container grid">
+                    <div> 
+                        <!-- SKILLS1 -->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Coding languages</h1>
+                                    <!-- <span class="skills__subtitle">More than 8 years</span> -->
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Fortran</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__fortran"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Matlab</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__matlab"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">OpenFOAM</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__openfoam"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">LaTeX</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__latex"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C++</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">gnuplot</h3>
+                                        <span class="skills__number">basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__gnuplot"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CMake</h3>
+                                        <span class="skills__number">basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cmake"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML/CSS</h3>
+                                        <span class="skills__number">basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- SKILLS2 -->
+                        <div class="skills__content skills__close">
+
+                            <div class="skills__header">
+                                <i class="uil uil-linux skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Operative systems</h1>
+                                    <!-- <span class="skills__subtitle">More than 15 years</span> -->
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Ubuntu/Bash</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ubuntu"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Windows</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__windows"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">macOS</h3>
+                                        <span class="skills__number">basic</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__macos"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <!-- SKILLS3 -->
+                        <div class="skills__content skills__close">
+
+                            <div class="skills__header">
+                                <i class="uil uil-focus skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Softwares</h1>
+                                    <!-- <span class="skills__subtitle">More than 5 years</span> -->
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SolidWorks</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sworks"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">FeMap</h3>
+                                        <span class="skills__number">advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__femap"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">NASA CEA</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cea"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Paraview</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__paraview"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SolidEdge</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sedge"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Inventor</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__inventor"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">xFoil</h3>
+                                        <span class="skills__number">intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__xfoil"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>     
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Career</h2>
+                <span class="section__subtitle">My personal journey</span>
+                
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">    
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#projects">     
+                            <i class="uil uil-wrench qualification__icon"></i>
+                            Projects
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#languages">     
+                            <i class="uil uil-letter-english-a qualification__icon"></i>
+                            Languages
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--qualification content 1-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--qualification1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <a href="https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?&aa=2021&k_cf=225&k_corso_la=469&ac_ins=0&k_indir=AER&lang=IT&tipoCorso=ALL_TIPO_CORSO&caricaOffertaInvisibile=false&semestre=ALL_SEMESTRI&sede=ALL_SEDI" target="_blank">
+                                        <h3 class="qualification__title">Aeronautical engineering</h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Milano - Politecnico di Milano</span>
+                                    <!--<span class="qualification__subsubtitle"> 000 / 110</span> -->
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        03/2021 - up to now
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--qualification2-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?&aa=2017&k_cf=225&k_corso_la=350&ac_ins=0&k_indir=AES&lang=IT&tipoCorso=ALL_TIPO_CORSO&caricaOffertaInvisibile=false&semestre=ALL_SEMESTRI&sede=ALL_SEDI">
+                                        <h3 class="qualification__title">Aerospace engineering</h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Milano - Politecnico di Milano</span>
+                                    <span class="qualification__subsubtitle">Final grade: 101 / 110</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        09/2017 - 09/2020
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--qualification content 2-->
+                        <div class="qualification__content" data-content id="projects">
+                            <div class="qualification__data">
+                                <div>
+                                    <a download="" href="assets/pdf/high_tech_startup_PRJ.pdf">
+                                        <h3 class="qualification__title">EnelX app: value proposition analysis and validation.</h3>
+                                    </a>
+                                    <span class="qualification__subtitle">High-tech startup, analysis and scaling up.</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        09/2021 - 01/2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="assets/pdf/LRE.pdf">
+                                        <h3 class="qualification__title">
+                                            Injector study and liquid jet breakup process inliquid rocket engines.
+                                        </h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Combustion in thermochemical propulsion</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        05/2021 - 06/2021
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <a href="https://github.com/antoniopucciarelli/aeroWEISS">
+                                        <h3 class="qualification__title">
+                                            Weissinger model. Study and modeling
+                                        </h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Aerodynamics</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        12/2020 - 01/2021
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://github.com/antoniopucciarelli/aeroHS">
+                                        <h3 class="qualification__title">Hess-Smith model. Study and modeling.</h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Aerodynamics</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        07/2020 - 01/2021
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">
+                                        Satellite orbital transfer analysis.
+                                    </h3>
+                                    <span class="qualification__subtitle">Orbital dynamics</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        05/2020 - 06/2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Canard wing modeling and analysis.</h3>
+                                    <span class="qualification__subtitle">Aerospace structures modeling.</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        05/2020 - 06/2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <a href="assets/pdf/RL10.pdf">
+                                        <h3 class="qualification__title">
+                                            RL10-A33A. Study and modeling.
+                                        </h3>
+                                    </a>
+                                    <span class="qualification__subtitle">Fundamentals of aerospace propulsion</span>
+                                    <span class="qualification__subsubtitle">Milano - Politecnico di Milano</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        11/2019 - 06/2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+                            </div>
+
+                        </div> 
+
+                        <!--qualification content 3-->
+                        <div class="qualification__content" data-content id="languages">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">TOEIC</h3>
+                                    <span class="qualification__subtitle">Level: B2</span>
+                                    <span class="qualification__subsubtitle">Final score: 860 / 990</span>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">PET</h3>
+                                    <span class="qualification__subtitle">Level: B1</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================
+            <section class="projects section" id="projects">
+    
+            </section> -->
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">antonio.pucc@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Milano - Italy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Company</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>  
+
+                </div>
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+              <div class="footer__container container grid">
+                  <div>
+                      <h1 class="footer__title">Antonio</h1>
+                      <span class="footer__subtitle">Aerospace engineer</span>
+                  </div>
+
+                  <ul class="footer__links">
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact me</a>
+                    </li>
+                  </ul>
+
+                <!--  <div class="footer__socials">
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+
+                  </div> -->
+
+              </div>  
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src= "assets/js/main.js"></script>
+    </body>
+</html>
