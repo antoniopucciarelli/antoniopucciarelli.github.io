@@ -589,12 +589,13 @@ img{
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-5);
 }
 
 .qualification__subsubtitle{
     display: inline-block;
     font-size: var(--smaller-font-size);
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-0-25);
 }
 
 .qualification__calendar{
@@ -929,7 +930,7 @@ img{
     }
 
     .qualification__sections{
-        grid-template-columns: 0.5fr;
+        grid-template-columns: 0.6fr;
     }
 
     .footer__container{
