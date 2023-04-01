@@ -467,16 +467,16 @@ img{
     width: 75%;
 }
 
-.skills__openfoam{
-    width: 75%;
-}
-
 .skills__latex{
     width: 75%;
 }
 
 .skills__matlab{
     width: 75%;
+}
+
+.skills__openfoam{
+    width: 50%;
 }
 
 .skills__c{
@@ -493,6 +493,10 @@ img{
 
 .skills__html{
     width: 25%;
+}
+
+.skills__mises{
+    width: 75%;
 }
 
 .skills__sworks{
