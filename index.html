@@ -50,6 +50,12 @@
                             </a>
                         </li>
 
+                        <!-- <li class="nav__item">
+                            <a href="#help" class="nav__link">
+                                <i class="uil uil-video-question nav__icon"></i> Help
+                            </a>
+                        </li> -->
+
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
                                 <i class="uil uil-message nav__icon"></i> Contact me
@@ -89,6 +95,18 @@
                             <a href="https://github.com/antoniopucciarelli" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github"></i>
                             </a>
+                            <!-- twitter -->
+                            <a href="https://twitter.com/antoniopccrll" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+                            <!-- instagram -->
+                            <a href="https://instagram.com/antoniopccrll" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <!-- facebook
+                            <a href="https://twitter.com/antoniopccrll" target="_blank" class="home__social-icon">
+                                <i class="uil uil-facebook"></i>
+                            </a> -->
                         </div>
 
                         <!--home blob-->
@@ -137,7 +155,11 @@
                                 Aerospace engineer
                             </h3>
                             <p class="home__description">
-                                Young engineer interested in computational fluid dynamics. I love anything related to fluid dynamics from physics to modeling and coding. My goal is working on solutions for pollution reduction and green transition. 
+                                Young engineer interested in computational fluid dynamics. 
+                                <br><br>
+                                I love anything related to fluid dynamics from physics to modeling and coding. 
+                                <br><br>
+                                I started working at new solutions for embedding machine learning to fluid dynamics especially in the turbomachinery field. 
                             </p>
                             <a href="#contact" class="button button--flex">
                                 Contact me<i class="iuil uil-message button__icon"></i>
@@ -163,7 +185,13 @@
                         
                     <div class="about__data">
                         <p class="about__description">
-                            Five years ago, I moved from Salerno to Milano with the intent of building my career in the aerospace field. I started the MSc pointing to have a good comprehension of internal and external flows, so I decided to create a personalized learning track based on CFD, turbomachinery design and flows modeling. Over the next few years, I intend to develop as aerospace engineer in the field of turbulence modeling and combustion processes analysis, modeling and optimization. I am also interested in external aerodynamics, its modeling and the study of aeroelastic effects.
+                            In 2017, I moved from Salerno to Milano with the aim of building my career in the aerospace field. 
+                            <br><br>
+                            I started the MSc pointing to have a good comprehension of internal and external flows, so I decided to create a personalized learning track based on CFD, turbomachinery design and flows modeling. 
+                            <br><br>
+                            During my studies for my MSc thesis I got into machine learning and, having realized its potential, I decided to work with artificial intelligence embedded in the aerospace subjects.
+                            <br><br>
+                            Over the next few years, I intend to develop as aerospace engineer in the field of turbulence modeling and combustion processes analysis, modeling and optimization. I am also interested in external aerodynamics, its modeling and the study of aeroelastic effects.
                         </p>
 
                         <div class="about__buttons">
@@ -189,7 +217,6 @@
                                 <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
                                     <h1 class="skills__title">Coding languages</h1>
-                                    <!-- <span class="skills__subtitle">More than 8 years</span> -->
                                 </div>
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
@@ -781,12 +808,18 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- =================== HELP ===========================
+            <section class="help section" id="help">
+                <h2 class="section__title">Help</h2>
+                <span class="section__subtitle"></span>
+
+            </section> -->
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact me</h2>
                 <span class="section__subtitle"></span>
-             
                 <div class="contact__container container grid">
                     <div class="contact__information__container">
                         <div class="contact__information">
@@ -846,22 +879,25 @@
         <footer class="footer">
             <div class="footer__bg">
               <div class="footer__container container grid">
-                  <div>
-                      <h1 class="footer__title">Antonio Pucciarelli</h1>
-                      <span class="footer__subtitle">Aerospace engineer</span>
-                  </div>
+                <div>
+                    <h1 class="footer__title">Antonio Pucciarelli</h1>
+                    <span class="footer__subtitle">Aerospace engineer</span>
+                </div>
 
-                  <ul class="footer__links">
+                <ul class="footer__links">
                     <li>
                         <a href="#about" class="footer__link">About</a>
                     </li>
                     <li>
                         <a href="#skills" class="footer__link">Skills</a>
                     </li>
+                    <!-- <li>
+                        <a href="#help" class="footer__link">Help</a>
+                    </li> -->
                     <li>
                         <a href="#qualification" class="footer__link">Career</a>
                     </li>
-                  </ul>
+                </ul>
 
                 <div class="footer__socials">
                     <!-- linkedIn -->
@@ -876,9 +912,11 @@
                     <a href="https://twitter.com/antoniopccrll" target="_blank" class="footer__social">
                         <i class="uil uil-twitter"></i>
                     </a>
-
-                  </div> 
-
+                    <!-- instagram -->
+                    <a href="https://instagram.com/antoniopccrll" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div> 
               </div>  
             </div>
         </footer>
@@ -892,36 +930,36 @@
         <script src= "assets/js/main.js"></script>
 
         <script>
-async function ajaxpost () {
-  // (A) GET FORM DATA
-  var data = await new FormData(document.getElementById("contact__form"));
+            async function ajaxpost () {
+            // (A) GET FORM DATA
+            var data = await new FormData(document.getElementById("contact__form"));
 
-  var name = data.get("name")
-  var email = data.get("email")
-  var message = data.get("message")
- 
-  // (B) AJAX REQUEST
-  // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
-  fetch("https://us-central1-my-shop-f91dd.cloudfunctions.net/widgets/sendEmail", { method:"POST", headers: {"Content-Type": "application/json"}, body:JSON.stringify({
-    name: name,
-    email: email,
-    message: message
-  }) })
-  .then(res => res.text())
- 
-  // (B2) SHOW MESSAGE ON SERVER RESPONSE
-  .then(response => {
-    console.log(response);
-    if (response == "OK") { alert("SUCCESSFUL!"); }
-    else { alert("FAILURE!"); }
-  })
- 
-  // (B3) OPTIONAL - HANDLE FETCH ERROR
-  .catch(err => console.error(err));
- 
-  // (C) PREVENT FORM SUBMIT
-  return false;
-}
+            var name = data.get("name")
+            var email = data.get("email")
+            var message = data.get("message")
+            
+            // (B) AJAX REQUEST
+            // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
+            fetch("https://us-central1-my-shop-f91dd.cloudfunctions.net/widgets/sendEmail", { method:"POST", headers: {"Content-Type": "application/json"}, body:JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            }) })
+            .then(res => res.text())
+            
+            // (B2) SHOW MESSAGE ON SERVER RESPONSE
+            .then(response => {
+                console.log(response);
+                if (response == "OK") { alert("SUCCESSFUL!"); }
+                else { alert("FAILURE!"); }
+            })
+            
+            // (B3) OPTIONAL - HANDLE FETCH ERROR
+            .catch(err => console.error(err));
+            
+            // (C) PREVENT FORM SUBMIT
+            return false;
+            }
         </script>
 
     </body>
