@@ -584,10 +584,12 @@ img{
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    text-decoration: underline;
 }
 
 .qualification__title:hover{
     color: var(--first-color);
+    text-decoration: underline;
 }
 
 .qualification__subtitle{
