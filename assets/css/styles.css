@@ -294,6 +294,7 @@ img{
     text-align: left;
 }
 
+
 .home__scroll{
     display: none;
 }
@@ -1005,4 +1006,95 @@ img{
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/*=============== CARD ===============*/
+.container_cv {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 7rem;
+}
+  
+.card__article {
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.card__button button {
+    width: 95px;
+    padding: 1rem;
+}
+
+.card__button__cv {
+    position: relative;
+    z-index: 1;
+}
+
+.card__button__cv button {
+    width: 95px;
+    padding-top: 3rem;
+}
+
+.card__profile {
+    transition: opacity .4s, transform .4s;
+}
+
+.card__tooltip {
+    position: absolute;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    bottom: -2rem;
+    transition: opacity .4s, bottom .4s cubic-bezier(.6, -0.5, .3, 1.5);
+    pointer-events: none;
+    background-color: var(--container-color);
+    box-shadow: 0 16px 32px hsla(230, 50%, 20%, .1);
+    border-radius: 1.5rem;
+    align-items: center;
+    opacity: 0;
+    z-index: 2;
+}
+  
+.card__content {
+    width:  900px;
+    height: 600px;
+    max-width: 900px;
+    overflow-y: scroll;
+    position: relative;
+    box-shadow: 0 16px 32px hsla(230, 50%, 20%, .1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+}
+
+.card__content img {
+    align-items: center;
+    border-radius: 1.5rem;
+    height: auto;
+}
+
+.card__button i {
+    font-size: 1.5rem;
+} 
+
+/* .card__article:hover .card__tooltip {
+    opacity: 1;
+    pointer-events: initial;
+    bottom: 3.8rem;
+} */
+
+.card__article:hover .card__tooltip {
+    opacity: 1;
+    pointer-events: initial;
+    bottom: 3.8rem;
+    display: block;
 }
