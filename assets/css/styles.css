@@ -1112,6 +1112,7 @@ img{
     border-top: 2rem solid #484848;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
+    margin-bottom: 200px;
   }
   
   .window .bar {
@@ -1158,32 +1159,39 @@ img{
     margin-top: 0.47rem;
     margin-bottom: -0.4rem;
   }
+  
+  .iframeDivGIF {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 0.47rem;
+    margin-bottom: -0.4rem;
+  }
 
-  .iframeDiv iframe {
+  .iframeDiv img {
     width: 100%; /* Ensures GIF fills container width */
     height: auto;  /* Maintains aspect ratio */
     position: relative;
-    padding-top: 10%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.gif-container {
-    position: relative;
-    width: 50vw;
-    height: 28.125vw;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .gif-container img {
-    width: 100%; 
-    /* Ensures GIF fills container width */
+.iframeDiv video {
+    width: 100%; /* Ensures GIF fills container width */
     height: auto;  /* Maintains aspect ratio */
     position: relative;
-    padding-top: 10%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers the GIF */
-  }
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
