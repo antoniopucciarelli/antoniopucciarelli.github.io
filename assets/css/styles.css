@@ -1098,3 +1098,92 @@ img{
     bottom: 3.8rem;
     display: block;
 }
+
+.window {
+    position: relative;
+    width: 50vw;
+    /* height: 28.125vw; */
+    /* height: auto; */
+    margin: auto;
+    background: white;
+    border-left: 0.5rem solid #484848;
+    border-right: 0.5rem solid #484848;
+    border-bottom: 0.5rem solid #484848;
+    border-top: 2rem solid #484848;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+  
+  .window .bar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1.4rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .window .bubble {
+    width: .9rem;
+    height: .9rem;
+    border-radius: 100rem;
+    display: inline-block;
+    margin-right: .3rem;
+    cursor: pointer;
+  }
+  
+  .window .bubble:hover {
+    opacity: .6;
+  }
+  
+  .window .bar .red {
+    background: #ea423f;
+  }
+  
+  .window .bar .yellow {
+    background: #efb62c;
+  }
+  
+  .window .bar .green {
+    background: #7ab300;
+  }
+  
+  .window .iframeDiv {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 0.47rem;
+    margin-bottom: -0.4rem;
+  }
+
+  .iframeDiv iframe {
+    width: 100%; /* Ensures GIF fills container width */
+    height: auto;  /* Maintains aspect ratio */
+    position: relative;
+    padding-top: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gif-container {
+    position: relative;
+    width: 50vw;
+    height: 28.125vw;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .gif-container img {
+    width: 100%; 
+    /* Ensures GIF fills container width */
+    height: auto;  /* Maintains aspect ratio */
+    position: relative;
+    padding-top: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the GIF */
+  }
